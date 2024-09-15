@@ -1,0 +1,112 @@
+/* Basic reset and full screen setup */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1f1c2c, #928DAB); /* Gradient background */
+    overflow: auto; /* Ensure scrolling works */
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none; /* Allows clicks to pass through the canvas */
+}
+
+/* Header styles */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Ensures header stays on top */
+}
+
+header h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 2.5em;
+}
+
+/* Navigation styles */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Ensures main content stays on top */
+}
+
+/* Section styles */
+section {
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+/* Subject sections */
+.subject {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.subject h3 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.subject h4 {
+    color: #ffcc00;
+    margin-top: 10px;
+}
+
+pre {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    color: #ffffff;
+    overflow-x: auto;
+    text-align: left;
+}
+
+/* Glowing button styles */
+.glowing-button {
+    background: linear-gradient(145deg, #ff6f61, #ffcc00);
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: 0 0 25px rgba(255, 105, 180, 0.8); /* Enhanced glow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.glowing-button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(145deg, #ffcc00, #ff6f61);
+    box-shadow: 0 0 35px rgba(255, 105, 180, 1); /* Enhanced glow effect on hover */
+}
